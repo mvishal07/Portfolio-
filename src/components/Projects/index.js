@@ -1,6 +1,7 @@
 import './index.css'
 import { FiGithub } from "react-icons/fi";
 import PSbasedFacerecognitionAttendanceSystemcoverphot from './images/PSbasedFacerecognitionAttendanceSystemcoverphot.png';
+import image from './images/image.png';
 function Projects(props) {
     const {theme} = props
     const projectsStyle = theme === 'light' ? 'projects' : 'projects-dark'
@@ -17,7 +18,7 @@ function Projects(props) {
             title: "JobbyApp",
             des: "Created the Jobby App to simplify job searching with features like filtering by salary range, employment type, and job title search. Built secure authentication with JWT token storage and API integration, and implemented pages such as Login, Home, and Job Details using React components and states.",
             tools: ["React Js","JavaScript","CSS","APIs","HTML"],
-            image: 'https://private-user-images.githubusercontent.com/108283119/395580430-9081cf61-f641-4a8f-9200-c553f107f120.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM5MjAwMTYsIm5iZiI6MTc0MzkxOTcxNiwicGF0aCI6Ii8xMDgyODMxMTkvMzk1NTgwNDMwLTkwODFjZjYxLWY2NDEtNGE4Zi05MjAwLWM1NTNmMTA3ZjEyMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwNlQwNjA4MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03NjNhMTMxM2Q4ZmE4YzUxMTE3YTYyM2JjYTFjYmI0NzU0ZDEwYmQ2NGU0MTZkMTNlMTE0NmNlOTgzNGIzYzFhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.rnQDapepKBq2zt1ajKptJNAld_imC50OqsppzJeFR7E',
+            image: image,
                         source: 'https://github.com/mvishal07/jobbyApp',
 
         },
