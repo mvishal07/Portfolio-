@@ -1,0 +1,147 @@
+.carousel-container {
+    width: 90%;
+
+    margin: 40px auto;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .carousel:hover{
+   transform: scale(1.1);
+    
+  }
+  
+  .carousel-slide {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .carousel-slide.active {
+    display: block;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    padding: 8px 12px;
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(200, 200, 200, 0.9);
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  
+  .carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active-dot {
+    background-color: #333;
+  }
+  
+  .badge{
+    height: 55vh;
+  }
+
+  .titlecer{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg, black ,black  ,rgb(241, 6, 6),rgb(255, 50, 50) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.titlecer-dark{
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(90deg, rgb(255, 0, 0) ,rgb(170, 18, 18)  ,rgb(122, 57, 57),rgba(128, 38, 38, 0.855) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  .view-btn{
+    background-color: #ffffff;
+    padding: .4rem;
+    border: 0;
+    border-radius: 0.5rem;
+    width: 170px;
+  }
+  .view-a{
+    color: #000000;
+  }
+
+  .view-btn:hover{
+    background-color: #fbe4a1;
+  }
+
+
+
+  @media all and (max-width:768px){
+
+
+    .badge{
+      display: none;
+    }
+
+    .carousel-container{
+      display: flex;
+      flex-direction: column;
+      
+    }
+  }
